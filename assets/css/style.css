@@ -30,12 +30,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--margin1);
 }
 
 main{
     margin: 0 100px 30px;
 }
+
+#active{
+    background-color: #0277bd;
+    color: white;
+}
+
 
 nav ul {
     display: flex;
@@ -90,7 +96,7 @@ h3 {
     border-bottom: 1px solid black;  
 }
 
-#flexible{
+#flexible {
     display: flex;
     flex-wrap : wrap;
     justify-content: space-between;
@@ -106,6 +112,34 @@ h3 {
     align-items: center;
 }
 
+form{
+    text-align: center;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 1000px;
+    margin-bottom: var(--margin2);
+}
+
+textarea{
+    resize: none;
+    width: 1000px;
+    height: 300px;
+    margin-bottom: var(--margin1);
+}
+
+.submit{
+    background-color: var(--secondary);
+    color: white;
+    height: 50px;
+
+}
+    
 @media screen and (max-width:768px){
     article {
          width: 100%;
