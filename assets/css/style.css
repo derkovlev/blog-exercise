@@ -96,7 +96,7 @@ h3 {
     border-bottom: 1px solid black;  
 }
 
-#flexible {
+#article-list {
     display: flex;
     flex-wrap : wrap;
     justify-content: space-between;
@@ -113,22 +113,27 @@ h3 {
 }
 
 form{
+    display: flex;
     text-align: center;
+    flex-direction: column;
+}
+.form-element{
+    margin-bottom: var(--margin1);
 }
 
 label{
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin-bottom: var(--margin1);       
 }
 
 input{
-    width: 1000px;
-    margin-bottom: var(--margin2);
+    width: 100%;
+    margin-bottom: var(--margin1);
 }
 
 textarea{
     resize: none;
-    width: 1000px;
+    width: 100%;
     height: 300px;
     margin-bottom: var(--margin1);
 }
