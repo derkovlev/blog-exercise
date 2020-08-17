@@ -29,6 +29,29 @@
         </nav>     
     </header>
     <main>
+        <form id="add-article" method="post" action="traitement.php">
+            <div class="form-element">
+                <label for="email">Entrez votre adresse mail</label>
+                <input type="mail" name="mail" id="mail">
+            </div>
+            <div class "form-element">
+                <label for=""> &Agrave quel sujet souhaitez-vous nous contacter</label>
+
+                <select name="reason" id="reason-select">
+                    <option value="default">--Choisissez une option--</option>
+                    <option value="submit-article">J'ai une idée à propos d'un nouvel article</option>
+                    <option value="submit-correction">j'aimerais proposer une correction pour un article</option>
+                    <option value="submit-plagiarism">je suis un colabo et je veux denoncer une personne</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <label for="sujet">sujet</label>
+                <input type="texte" name="sujet" id="sujet" />
+            </div>
+            <div class="form-element">
+                <input class="submit" type="submit" value="Envoyer" />
+            </div>
+        </form>
         
     </main>
     <footer>
